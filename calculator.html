@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>Currency Calculator</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Currency converter</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="card ">
-            <h2 class="text-center">Currency Converter</h2>
-            <div class="mb-3">
-                <label for="amount" class="form-label">Amount</label>
-                <input type="number" id="amount" class="form-control" placeholder="Enter amount">
-            </div>
-            <div class="mb-3">
-                <label for="fromCurrency" class="form-label form ">From</label>
-                <select id="fromCurrency" class="form-select">
-                    <option value="USD">USD</option>
-                    <option value="Afghani">EURO</option>
-                    <option value="GBP">United Arab Emirates Dirham</option>
-                    <option value="INR">Pakistani Rupee</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="toCurrency" class="form-label">To</label>
-                <select id="toCurrency" class="form-select">
-                    <option value="USD">USD</option>
-                    <option value="Afghani">EURO</option>
-                    <option value="GBP">United Arab Emirates Dirham</option>
-                    <option value="INR">Pakistani Rupee</option>
-                </select>
-            </div>
-            <button class="btn btn-primary w-100">Click Here To Convert</button>
-            <h3 class=" text-center" id="result"></h3>
+      <h1>Currency converter</h1>
+      <h3>Convert between currencies</h3>
+
+      <form action="">
+        <div class="from">
+          <label for="">From</label>
+          <select name="" id="from">
+            <option value="GHS">GHS</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="KES">KES</option>
+            <option value="AFN">AFN</option>
+            <option value="NGN">NGN</option>
+          </select>
         </div>
+
+        <div class="to">
+          <label for="">To</label>
+          <select name="" id="to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="KES">KES</option>
+            <option value="GHS">GHS</option>
+            <option value="AFN">AFN</option>
+            <option value="NGN">NGN</option>
+          </select>
+        </div>
+        <label>Amount:</label>
+        <input type="number" id="amount" placeholder="enter amount" />
+        <button>Convert</button>
+      </form>
+      <p id="result"></p>
     </div>
 
-    <script src="calculator.js" ></script>
-</body>
+    <script src="calculator.js"></script>
+  </body>
 </html>

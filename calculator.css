@@ -1,42 +1,65 @@
-.container{
-    background-image: url(currency1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-}
-.mb-3{
-    font-size: 20px;
-    padding: 5px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-
-h2 {
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px;
+    border-radius: 10px;
+  }
+  .from,
+  .to {
+    display: inline;
+    margin: 30px;
     text-align: center;
-}
-
-.form-control, .form-select {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-}
-
-button {
+  }
+  h1,
+  h3 {
+    text-align: center;
+    font-family: tahoma;
+  }
+  h1{
+    font-size: 50px;
+    color: brown;
+    font-family: verdana;
+    margin-top: 0
+  }
+  h3{
+      margin: 10px 0px;
+      font-size: 30px;
+  }
+  button {
     display: block;
-    width: 100%;
-    height: 45px;
-    margin: auto;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border-radius: 3px black;
+    padding: 8px;
+    margin: 25px auto;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: verdana;
+    background-color: brown;
+    color: #f4f4f4;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+  }
+  select{
+      width: 60px;
+      height: 20px
+  }
+  option{
+      text-align: center;
+  }
+  label{
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 2px;
+  }
+  p{
+    margin: 0 auto;
+    font-size: 30px;
+  }
+  input{
+    width: 100px;
+    height: 20px
+  }
+  
